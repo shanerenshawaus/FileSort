@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.lblFolder = new System.Windows.Forms.Label();
             this.lblFile = new System.Windows.Forms.Label();
@@ -39,6 +40,9 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnDestination = new System.Windows.Forms.Button();
             this.lblDestination = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.picLoader = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picLoader)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -132,11 +136,34 @@
             this.lblDestination.TabIndex = 7;
             this.lblDestination.Text = "Please select a folder";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(288, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(282, 156);
+            this.label2.TabIndex = 9;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
+            // picLoader
+            // 
+            this.picLoader.Image = global::FileSort.Properties.Resources.ajax_loader;
+            this.picLoader.Location = new System.Drawing.Point(12, 13);
+            this.picLoader.Name = "picLoader";
+            this.picLoader.Size = new System.Drawing.Size(569, 168);
+            this.picLoader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picLoader.TabIndex = 10;
+            this.picLoader.TabStop = false;
+            this.picLoader.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 193);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(593, 193);
+            this.Controls.Add(this.picLoader);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnDestination);
             this.Controls.Add(this.lblDestination);
             this.Controls.Add(this.btnClose);
@@ -147,7 +174,8 @@
             this.Controls.Add(this.lblFolder);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "File Sorter";
+            ((System.ComponentModel.ISupportInitialize)(this.picLoader)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,6 +194,8 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnDestination;
         private System.Windows.Forms.Label lblDestination;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picLoader;
     }
 }
 

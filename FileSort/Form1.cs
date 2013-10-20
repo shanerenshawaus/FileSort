@@ -33,17 +33,17 @@ namespace FileSort {
         }
 
         private void btnRun_Click(object sender, EventArgs e) {
+            picLoader.Visible = true;
+            picLoader.Refresh();
             string file = lblFile.Text;
             string folder = lblFolder.Text;
             string destination = lblDestination.Text;
             Sorter sortClass = new Sorter();
             try {
-                //sortClass.ReadFile(file);
                 sortClass.SortFiles(sortClass.ReadFile(file), folder, destination);
             } catch (Exception ex) {
-
                 MessageBox.Show("Something went Wrong " + ex.Message);
-            }
+            } finally { picLoader.Visible = false; picLoader.Refresh(); }
         }
 
         private void btnDestination_Click(object sender, EventArgs e) {

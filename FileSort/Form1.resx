@@ -123,4 +123,18 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>186, 17</value>
   </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Instructions:
+
+1. Select the file that contains comma seperated data
+    with destination folder in the first colum and 
+    Filename in the second. eg.
+    Folder1,File1
+    Folder2,File2
+
+2. Select the source folder containing the files to be 
+    sorted
+
+3. Select the destination folder to place the organised files.</value>
+  </data>
 </root>
