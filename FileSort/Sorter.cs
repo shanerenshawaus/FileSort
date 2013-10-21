@@ -43,7 +43,7 @@ namespace FileSort {
                     string[] split = file.Split('\\');
                     string[] fileName = split.Last().Split('.');
                     try {
-                        Sorter reference = referenceList.First(i => i.nameRef == fileName[0]);
+                        Sorter reference = referenceList.First(i => i.nameRef.ToUpper() == fileName[0].ToUpper());
                         try {
 
                             Directory.GetDirectories(outFolder + "\\" + reference.toFolder);

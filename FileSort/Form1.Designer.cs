@@ -79,7 +79,7 @@
             this.btnFile.Name = "btnFile";
             this.btnFile.Size = new System.Drawing.Size(85, 23);
             this.btnFile.TabIndex = 3;
-            this.btnFile.Text = "Select File";
+            this.btnFile.Text = "Reference File";
             this.btnFile.UseVisualStyleBackColor = true;
             this.btnFile.Click += new System.EventHandler(this.btnFile_Click);
             // 
@@ -89,7 +89,7 @@
             this.btnFolder.Name = "btnFolder";
             this.btnFolder.Size = new System.Drawing.Size(85, 23);
             this.btnFolder.TabIndex = 4;
-            this.btnFolder.Text = "Select Folder";
+            this.btnFolder.Text = "Source Folder";
             this.btnFolder.UseVisualStyleBackColor = true;
             this.btnFolder.Click += new System.EventHandler(this.btnFolder_Click);
             // 
@@ -148,7 +148,7 @@
             // picLoader
             // 
             this.picLoader.Image = global::FileSort.Properties.Resources.ajax_loader;
-            this.picLoader.Location = new System.Drawing.Point(12, 13);
+            this.picLoader.Location = new System.Drawing.Point(11, 16);
             this.picLoader.Name = "picLoader";
             this.picLoader.Size = new System.Drawing.Size(569, 168);
             this.picLoader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
